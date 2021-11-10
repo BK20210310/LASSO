@@ -6,12 +6,19 @@ LASSO is one method of feature selection. I used gene expression data (https://w
 
 ## Data visualization
 
+GEO dataset: GSE130563 was a microarray data which analyzed 23786 genes of skeletal muscle samples from PC patients with and without cachexia. Volcano plot is a data visualization tool for microarray data. The horizontal axis is log fold change and vertical axis is -log p-value. P-value was calculated by t-test.
+
 ![volcano plot](https://user-images.githubusercontent.com/80352910/140676210-5211e0c7-bfb6-40ff-94f0-63abd70c72ed.png)
 
+## Logistic regression
 
+I simply picked 8 genes to run logistic regression and used AIC ( Akaike Information Criterion) to evaluate the fitness of model.
 
+![logistic regression](https://user-images.githubusercontent.com/80352910/141036895-da7e82a9-1c0c-433b-b6f3-dee7162aee9a.PNG)
 
+## LASSO
 
+Then added L1 penalty to logistic regression. It can select important independent variables from 8 genes. When λ increased, the coefficients of independent variables would shrinkage to zero.
 
 ![LASSO plot](https://user-images.githubusercontent.com/80352910/140690682-c1e770c7-fccc-4428-864f-f443d1e5fe24.png)
 
