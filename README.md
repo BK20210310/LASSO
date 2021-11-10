@@ -1,6 +1,8 @@
-# LASSO
+# LASSO (Least Absolute Shrinkage and Selection Operator)
 
-LASSO (Least Absolute Shrinkage and Selection Operator) is a method for feature selection.
+## Introduction
+
+LASSO is one method of feature selection. I used gene expression data (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130563) as an example to implement LASSO.
 
 ## Data visualization
 
