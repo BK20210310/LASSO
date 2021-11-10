@@ -12,7 +12,7 @@ GEO dataset: GSE130563 was a microarray data which analyzed 23786 genes of skele
 
 ## Logistic regression
 
-I simply picked 8 genes to run logistic regression and used AIC ( Akaike Information Criterion) to evaluate the fitness of model.
+I simply picked 8 independent variables (genes) to run logistic regression and used AIC ( Akaike Information Criterion) to evaluate the fitness of model.
 
 ![logistic regression](https://user-images.githubusercontent.com/80352910/141036895-da7e82a9-1c0c-433b-b6f3-dee7162aee9a.PNG)
 
@@ -22,6 +22,13 @@ Then added L1 penalty to logistic regression. It can select important independen
 
 ![LASSO plot](https://user-images.githubusercontent.com/80352910/140690682-c1e770c7-fccc-4428-864f-f443d1e5fe24.png)
 
-
+In this case, I used 10-fold cross validation to choose optimal λ.
 
 ![MAE plot](https://user-images.githubusercontent.com/80352910/140690674-d9e2d699-6f41-40b2-8b83-d0491700fca1.png)
+
+## Post-LASSO
+
+After that, I used 4 independent variables which were selected by LASSO to run logistic regression again. 
+
+![post-LASSO](https://user-images.githubusercontent.com/80352910/141037921-ff84e56c-6a0b-47c9-8e97-83e568f53cd2.PNG)
+
