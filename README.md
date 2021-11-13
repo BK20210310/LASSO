@@ -1,16 +1,15 @@
 # LASSO (Least Absolute Shrinkage and Selection Operator)
 
+LASSO is one method for feature selection. LASSO adds L1 penalty on GLM (Generalized Linear Model) to select important features. 
+
 ## Introduction
 
-LASSO is one method for feature selection. LASSO adds L1 penalty on GLM (Generalized Linear Model) to select important features. 
 Here, I used gene expression data as an example to implement LASSO.
-
-
-GSE130563 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130563) is a microarray data which analyzed 23786 genes of skeletal muscle samples from PC patients with and without cachexia.
+GSE130563 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130563) is a microarray data which analyzed 23786 genes of skeletal muscle samples from PC (Pancreatic Cancer) patients with and without cachexia.
 
 ## Data visualization
-
-Volcano plot is a data visualization tool for microarray data. Fold change and p-value are used to compare gene expression between cachexia and 
+First, that's take a look of 23786 genes (features).
+Volcano plot is a data visualization tool for microarray data. Fold change and p-value are used to compare gene expression between cachexia and non-cachexia.
 The horizontal axis is log fold change and vertical axis is -log p-value. P-value was calculated by t-test.
 
 ![volcano plot](https://user-images.githubusercontent.com/80352910/140676210-5211e0c7-bfb6-40ff-94f0-63abd70c72ed.png)
